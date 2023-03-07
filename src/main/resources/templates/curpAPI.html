@@ -1,0 +1,21 @@
+<html>Waos!</html>
+
+<script>
+	// Especifica el número de CURP que deseas consultar
+const curp = 'AAOR000705HNTNLBA9';
+
+// Construye la URL de la API con el número de CURP
+const url = `https://api.curp.gob.mx/v1/curp/${curp}`;
+
+// Hace una petición GET a la API utilizando fetch()
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    // Imprime los datos obtenidos de la CURP
+    console.log(data);
+  })
+  .catch(error => {
+    // Maneja el error si se produce
+    console.error('Error:', error);
+  });
+</script>
