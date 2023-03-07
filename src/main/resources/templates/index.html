@@ -1,4 +1,21 @@
-<html>Wolas</html>
+<html>
+
+</html>
 <script>
+	
+	const options = {
+	method: 'POST',
+	headers: {
+		'content-type': 'application/json',
+		'X-RapidAPI-Key': '7e3652d51fmsh1f9dee526105638p1ba2a9jsn36664a2cd5f7',
+		'X-RapidAPI-Host': 'curp-renapo.p.rapidapi.com'
+	},
+	body: '{"curp":"AAOR000705HNTNLBA9"}'
+};
+
+fetch('https://curp-renapo.p.rapidapi.com/v1/curp', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
 	
 </script>

@@ -10,5 +10,4 @@ public class CurpController {
 	public String consultarCurp() {
 		return "index";
 	}
-	
 }
